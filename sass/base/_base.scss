@@ -1,0 +1,74 @@
+@use "../abstracts/mixins" as *;
+@use "../abstracts/function" as *;
+@use "../abstracts/variables" as *;
+@use "sass:map";
+
+$breakpoints: (
+  xsmall: 320px,
+  small: 480px,
+  smedium: 600px,
+  medium: 768px,
+  lmedium: 900px,
+  large: 1024px,
+  xlarge: 1280px,
+  xxlarge: 1440px,
+  ultra: 1600px,
+  super-ultra: 1800px,
+);
+
+html {
+  font-size: 62.5%;
+  @media (max-width: map.get($breakpoints, super-ultra)) {
+    font-size: 58%;
+  }
+
+  @media (max-width: map.get($breakpoints, ultra)) {
+    font-size: 58%;
+  }
+
+  @media (max-width: map.get($breakpoints, xxlarge)) {
+    font-size: 55%;
+  }
+
+  @media (max-width: map.get($breakpoints, xlarge)) {
+    font-size: 50%;
+  }
+
+  @media (max-width: map.get($breakpoints, large)) {
+    font-size: 45%;
+  }
+
+  @media (max-width: map.get($breakpoints, lmedium)) {
+    font-size: 42.5%;
+  }
+
+  @media (max-width: map.get($breakpoints, medium)) {
+    font-size: 40%;
+  }
+
+  @media (max-width: map.get($breakpoints, smedium)) {
+    font-size: 37.5%;
+  }
+
+  @media (max-width: map.get($breakpoints, small)) {
+    font-size: 35%;
+  }
+
+  @media (max-width: map.get($breakpoints, xsmall)) {
+    font-size: 30%;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.7;
+  font-weight: 400;
+  color: $color-dark-grey;
+}

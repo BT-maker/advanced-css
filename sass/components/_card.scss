@@ -1,0 +1,141 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+@use "../abstracts/function" as *;
+
+@media only screen and (max-width: 968px) {
+    .card {
+        margin-bottom: 5rem; // or whatever value you prefer
+    }
+}
+
+.card {
+    perspective: 150rem;
+    position: relative;
+    height: 70rem;
+    background-color: $color-light-grey-1;
+    border: none;
+
+    &-side {
+        height: 70rem;
+        transition: all 0.8s ease;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
+
+        &-front {
+            background-color: $color-white;
+        }
+
+        &-back {
+            transform: rotateY(180deg);
+
+            &-1 {
+                background-image: linear-gradient(
+                    to right bottom,
+                    $color-secondary-light,
+                    $color-secondary-dark
+                );
+            }
+
+            &-2 {
+                background-image: linear-gradient(
+                    to right bottom,
+                    $color-primary-light,
+                    $color-primary-dark
+                );
+            }
+
+            &-3 {
+                background-image: linear-gradient(
+                    to right bottom,
+                    $color-tertiary-light,
+                    $color-tertiary-dark
+                );
+            }
+        }
+    }
+    &:hover &-side-front {
+        transform: rotateY(-180deg);
+    }
+
+    &:hover &-side-back {
+        transform: rotateY(0);
+    }
+
+    // Front Side Style
+    &-picture {
+        background-size: cover;
+        height: 30rem;
+        // background-blend-mode: screen; photshop vari
+
+        &-1 {
+            background-image: url("../../images/tomato.jpeg");
+        }
+
+        &-2 {
+            background-image: url("../../images/çilek.jpg");
+        }
+
+        &-3 {
+            background-image: url("../../images/yaban-mersini.jpg");
+        }
+    }
+    .card-heading {
+        background: $color-image-golden;
+        color: white;
+        font-size: 2rem;
+        font-weight: 500;
+        text-align: center;
+        padding: 1rem;
+        border-radius: 0 0 10px 10px;
+        text-transform: uppercase;
+    }
+
+    &-details {
+        width: 100%;
+        margin-top: 2rem;
+
+        ul {
+            list-style: none;
+            width: 80%;
+            margin: 0 auto;
+
+            li {
+                font-family: sans-serif;
+                font-size: 1.5rem;
+                padding: 1.5rem;
+                border-bottom: 1px solid $color-live-green;
+                text-align: center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+
+    &-price {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        &-box {
+            color: $color-white;
+            text-align: center;
+        }
+
+        &-only {
+            font-size: 3rem;
+        }
+
+        &-value {
+            font-size: 6rem;
+        }
+    }
+}

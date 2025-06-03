@@ -1,0 +1,37 @@
+@use "../abstracts/variables" as *;
+
+.u-center-text {
+  text-align: center;
+}
+
+.u-mb-s {
+  margin-bottom: 2rem;
+}
+
+.u-mb-m {
+  margin-bottom: 4rem;
+}
+
+.u-mb-l {
+  margin-bottom: 8rem;
+}
+
+.u-mt-s {
+  margin-top: 2rem;
+}
+
+.u-mt-m {
+  margin-top: 4rem;
+}
+
+.u-mt-l {
+  margin-top: 8rem;
+}
+
+.u-mt-xxl {
+  margin-top: 16rem;
+}
+
+.color-special-heading {
+  color: #006400;
+}

@@ -1,0 +1,25 @@
+.form {
+    &__group {
+        justify-content: center;
+        align-items: center; 
+        width: 60%;
+        background-color: rgba(0, 0, 0, 1);
+        margin: 0 auto;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    &__input {
+        width: 100%;
+        text-align: center;
+        margin: 0.5rem 0;
+    }
+
+    &__label {
+        width: 100%;
+        text-align: center;
+        margin: 0.5rem 0;
+    }
+} 

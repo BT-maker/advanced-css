@@ -1,0 +1,16 @@
+{
+  "name": "advanced-css",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "compile-sass": "sass sass/main.scss css/style.css",
+    "sass-watch": "sass --watch sass/main.scss:css/style.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "Modern responsive organic food e-commerce website built with SASS, featuring BEM methodology, animations, and Bootstrap integration.",
+  "devDependencies": {
+    "sass": "^1.83.4"
+  }
+}

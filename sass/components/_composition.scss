@@ -1,0 +1,41 @@
+@use "../abstracts/mixins" as *;
+@use "../abstracts/function" as *;
+@use "../abstracts/variables" as *;
+
+.composition {
+    margin-top: 2rem;
+    position: relative;
+    &-photo {
+        width: 60%;
+        box-shadow: 0 1.5rem 4rem rgba($color: $color-black, $alpha: 0.4);
+        border-radius: 20px;
+        position: absolute;
+        transition: all 0.25s;
+        outline-offset: 1rem;
+
+        &-1 {
+            left: 0;
+            top: 0;
+            z-index: 1;
+        }
+
+        &-2 {
+            right: 0;
+            top: 8rem;
+            z-index: 2;
+        }
+
+        &-3 {
+            left: 10rem;
+            top: 20rem;
+            z-index: 3;
+        }
+
+        &:hover {
+            outline: 1.5rem solid $color-live-green;
+            transform: scale(1.1);
+            box-shadow: 0 3rem 8rem rgba($color-black, $alpha: 0.6);
+            z-index: 4;
+        }
+    }
+}
