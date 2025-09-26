@@ -1,19 +1,19 @@
-# Organic Foods Shop - Responsive Web Projesi
+# Organic Foods Shop - Responsive Web Project
 
-Bu proje, modern ve responsive bir organik gıda e-ticaret web sitesi tasarımını içermektedir. SASS kullanılarak geliştirilmiş olup, BEM metodolojisi ile yapılandırılmıştır.
+This project contains a modern and responsive organic food e-commerce website design. It is developed using SASS and structured with BEM methodology.
 
-## 🚀 Özellikler
+## 🚀 Features
 
-- Responsive tasarım (mobil, tablet ve masaüstü uyumlu)
-- Modern ve kullanıcı dostu arayüz
-- SASS ile modüler CSS yapısı
-- BEM metodolojisi ile organize edilmiş kod yapısı
-- Bootstrap grid sistemi entegrasyonu
-- Animasyonlu UI elementleri
-- Video arka plan desteği
-- Form validasyonları
+- Responsive design (mobile, tablet and desktop compatible)
+- Modern and user-friendly interface
+- Modular CSS structure with SASS
+- Organized code structure with BEM methodology
+- Bootstrap grid system integration
+- Animated UI elements
+- Video background support
+- Form validations
 
-## 🛠️ Kullanılan Teknolojiler
+## 🛠️ Technologies Used
 
 - HTML5
 - SASS/SCSS
@@ -22,9 +22,7 @@ Bu proje, modern ve responsive bir organik gıda e-ticaret web sitesi tasarımı
 - CSS Animations
 - Responsive Design
 
-## 📁 Proje Yapısı
-
-```
+## 📁 Project Structure
 advanced-css/
 ├── css/
 │   └── style.css
@@ -50,35 +48,33 @@ advanced-css/
 ├── images/
 ├── icons/
 └── index.html
-```
+## 🚀 Installation
 
-## 🚀 Kurulum
-
-1. Projeyi klonlayın:
+1. Clone the project:
 ```bash
-git clone [proje-url]
+git clone [project-url]
 ```
 
-2. SASS'ı global olarak yükleyin (eğer yüklü değilse):
+2. Install SASS globally (if not already installed):
 ```bash
 npm install -g sass
 ```
 
-3. SASS dosyalarını CSS'e derleyin:
+3. Compile SASS files to CSS:
 ```bash
 sass sass/main.scss css/style.css --watch
 ```
 
-4. `index.html` dosyasını bir web tarayıcısında açın.
+4. Open the `index.html` file in a web browser.
 
-## 🎨 Bileşenler
+## 🎨 Components
 
-- Header bölümü
-- Hakkımızda bölümü
-- Özellikler bölümü
-- Ürün kartları
-- Müşteri yorumları
-- Kayıt formu
+- Header section
+- About section
+- Features section
+- Product cards
+- Customer testimonials
+- Registration form
 
 ## 📱 Responsive Breakpoints
 
@@ -86,9 +82,9 @@ sass sass/main.scss css/style.css --watch
 - Tablet: 600px - 900px
 - Desktop: > 900px
 
-## 🎯 BEM Metodolojisi
+## 🎯 BEM Methodology
 
-Proje BEM (Block Element Modifier) metodolojisi kullanılarak yapılandırılmıştır:
+The project is structured using BEM (Block Element Modifier) methodology:
 
 ```scss
 .block {
@@ -100,20 +96,18 @@ Proje BEM (Block Element Modifier) metodolojisi kullanılarak yapılandırılmı
 }
 ```
 
-## 🤝 Katkıda Bulunma
+## 🤝 Contributing
 
-1. Bu depoyu fork edin
-2. Yeni bir branch oluşturun (`git checkout -b feature/amazing-feature`)
-3. Değişikliklerinizi commit edin (`git commit -m 'Add some amazing feature'`)
-4. Branch'inizi push edin (`git push origin feature/amazing-feature`)
-5. Pull Request oluşturun
+1. Fork this repository
+2. Create a new branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push your branch (`git push origin feature/amazing-feature`)
+5. Create a Pull Request
 
+## Contact
 
-## İletişim
+Project Owner - [@BT-maker](https://github.com/BT-maker)
 
-Proje Sahibi - [@BT-maker](https://github.com/BT-maker)
-
-Proje Linki: [https://github.com/BT-maker/advanced-css](https://github.com/BT-maker/advanced-css) 
-
+Project Link: [https://github.com/BT-maker/advanced-css](https://github.com/BT-maker/advanced-css) 
 
 # advanced-css
